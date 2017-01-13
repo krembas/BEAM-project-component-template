@@ -1,0 +1,19 @@
+# Template of ansible playbook for project deploy job
+#
+# Just use below play as template for adding additional plays with given
+# hosts/groups to perform specified actions from roles/tasks on them
+#
+# It's just ansible playbook - you can put here everything related to playbooks
+# that is supported by ansible.
+
+# If you want use any includes, please put them in includes subfolder to keep
+# job folder clean (it should contains only job "main" playbooks)
+---
+- hosts: all
+  roles:
+    #--------------------------------------------------------------------------------------------------------------------
+    - role: beam.job.deploy.project.init  # always reqired as first role in play to initialize it as "project deploy job"
+    #--------------------------------------------------------------------------------------------------------------------
+    # Put all roles needed for project deploy job on given hosts below:
+
+
