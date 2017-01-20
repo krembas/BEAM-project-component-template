@@ -1,0 +1,2 @@
+# This folder contains all component-related (used only for this project component) ansible roles used by components jobs playbooks that BEAM passes to ansible during its runtime.
+# Everything related to ansible roles that is supported by ansible can be put here.
